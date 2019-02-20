@@ -67,7 +67,7 @@ public class PairsGameTable {
 
 	public void  createTable() {
 		
-		frame=new JFrame("GuessNumber Game");
+		frame=new JFrame("Pairs Game");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(980, 700);
 		frame.setLocation((int)(Toolkit.getDefaultToolkit().getScreenSize().getWidth()-frame.getSize().getWidth())/2,
@@ -318,7 +318,7 @@ public class PairsGameTable {
 	
 	public void setTitle(String text) {
 		
-		frame.setTitle("GuessNumber Game - "+text);
+		frame.setTitle("Pairs Game - "+text);
 		
 	}
 	
