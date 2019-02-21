@@ -77,18 +77,19 @@ public class PairsGameLogic {
 		guessedNumbers = new ArrayList<>();
 		Random rnd=new Random();
 		 
-		 HashSet<Integer> oneStore=new HashSet<>();
-		 HashSet<Integer> twoStore=new HashSet<>();
+		 HashSet<Integer> store=new HashSet<>();
 		 
-		 while(oneStore.size()<10 || twoStore.size()<10) {
+		 
+		 while(store.size()<10) {
 			 
-			 oneStore.add(rnd.nextInt(10)+1);
-			 twoStore.add(rnd.nextInt(10)+1);
+			 store.add(rnd.nextInt(100));
+			
 	
 		 }
 		 
-		 guessedNumbers.addAll(oneStore);
-		 guessedNumbers.addAll(twoStore);
+		 guessedNumbers.addAll(store);
+		 guessedNumbers.addAll(store);
+		 
 		 
 		 Collections.shuffle(guessedNumbers);
 		
