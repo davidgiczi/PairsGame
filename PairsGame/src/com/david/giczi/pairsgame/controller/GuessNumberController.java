@@ -221,7 +221,7 @@ public class GuessNumberController implements ActionListener {
 		
 		table.getTimer().stop();
 		
-		table.setPlayerName("The Game has ended in "+logic.getClickCounter()+" steps.\nPlease, add your name:");
+		table.setPlayerName("The game has ended in "+logic.getClickCounter()+" steps.\nPlease, add your name:");
 		
 		if(table.getPlayerName()!=null) {
 	
